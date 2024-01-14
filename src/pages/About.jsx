@@ -4,7 +4,10 @@ import CTA from '../components/CTA'
 
 const About = () => {
   return (
-    <section className='max-container'>
+    <section className='max-container bg-amber-50'>
+      <Helmet>
+        <title>Afridi | About</title>
+      </Helmet>
       <h1 className='head-text'>
         Hello , I'm <span className='blue-gradient_text font-semibold drop-shadow'>Afridi</span>
       </h1>

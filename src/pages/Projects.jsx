@@ -3,10 +3,15 @@ import { projects } from '../constants'
 import { Link } from 'react-router-dom'
 import { arrow } from '../assets/icons'
 import CTA from '../components/CTA'
+import { Helmet } from 'react-helmet'
 
 const Projects = () => {
   return (
-    <section className='max-container'>
+    
+    <section className='max-container bg-amber-50'>
+      <Helmet>
+        <title>Afridi | Projects</title>
+      </Helmet>
       <h1 className='head-text'>
         My <span className='blue-gradient_text font-semibold drop-shadow' >Projcts</span>
       </h1>
@@ -16,7 +21,7 @@ const Projects = () => {
 
       <div className='flex flex-wrap my-20 gap-16'>
         {projects.map((project) => (
-          <div className='lg:w-[400px] w-full' key={project.name}>
+          <div className='lg:w-[400px] w-full border p-6 rounded-xl border-blue-700' key={project.name}>
             <div className='block-container w-12 h-12'>
               <div className={`btn-back rounded-xl ${project.theme}`} />
               <div className=' btn-front rounded-xl flex justify-center items-center'>
@@ -28,7 +33,7 @@ const Projects = () => {
                 />
               </div>
             </div>
-            <div className='mt-5 flex flex-col'>
+            <div className='mt-5 flex flex-col '>
               <h4 className='text-2xl font-poppins font-semibold'>
                 {project.name}
               </h4>

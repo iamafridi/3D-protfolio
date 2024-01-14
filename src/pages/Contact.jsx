@@ -50,19 +50,23 @@ const Contact = () => {
       setCurrentAnimation('idle')
       console.log(error);
       showAlert({ show: true, text: 'Sorry! I did not received you message!', type: 'danger' })
-   
+
     })
   };
 
-  const handleFocus = () => { setCurrentAnimation('Walk') };
+  const handleFocus = () => setCurrentAnimation('walk');
   const handleBlur = () => { setCurrentAnimation('idle') };
 
 
   return (
     <section className='relative flex lg:flex-row flex-col max-container h-[100vh]'>
-{
-  alert.show && <Alert {...alert} />
-}
+      <Helmet>
+        <title>Afridi | Contact</title>
+      </Helmet>
+
+      {
+        alert.show && <Alert {...alert} />
+      }
 
       <div className='flex-1 min-w-[50%] flex flex-col'>
         <h1 className='head-text'>Let's Connect</h1>
@@ -137,13 +141,13 @@ const Contact = () => {
           }}
         >
 
-          <directionalLight intensity={2.5} position={[0, 0, 1]} />
-          <ambientLight intensity={0.5} />
+          <directionalLight intensity={-7.5} position={[0, 0, 1]} />
+          <ambientLight intensity={5.5} />
           <Suspense fallback={<Loader />} >
             <Fox
               currentAnimation={currentAnimation}
-              position={[0.5, 0.35, 0]}
-              rotation={[12.6, -0.6, 0]}
+              position={[0.5, 0.45, 0]}
+              rotation={[12.6, -0.8, 0]}
               scale={[.5, 0.5, 0.5]}
             />
           </Suspense>

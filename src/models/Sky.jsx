@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 
-import skyScene from '../assets/3d/sky.glb'
+import skyScene from '../assets/3d/free_-_skybox_thunderstorm.glb'
 import { useFrame } from '@react-three/fiber'
 
 const Sky = ({ isRotating }) => {

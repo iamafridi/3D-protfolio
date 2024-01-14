@@ -35,7 +35,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .blue-gradient_text {
-    @apply bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#00c6ff] to-[#dbdddf] bg-clip-text text-transparent;
   }
 
   .input {
@@ -167,7 +167,7 @@ body:has(.card[data-color="green"]:hover) {
 
 /* Neo Brutalism */
 .neo-brutalism-blue {
-  background: #2b77e7;
+  background: #043885;
   position: relative;
   border-radius: 10px;
   border: #2b77e7;

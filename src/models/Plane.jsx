@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import planeScene from '../assets/3d/plane.glb'
+import planeScene from '../assets/3d/stylized_ww1_plane.glb'
 import { useAnimations, useGLTF } from '@react-three/drei'
 
 

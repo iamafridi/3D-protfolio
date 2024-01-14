@@ -8,7 +8,7 @@ Title: Mutant Animal talk
 
 import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
-import scene from '../assets/3d/mutant_animal_talk.glb'
+import scene from '../assets/3d/fox.glb'
 
 
 
@@ -30,33 +30,37 @@ const Fox = ({ currentAnimation, ...props }) => {
     return (
         <group ref={group} {...props} dispose={null}>
             <group name="Sketchfab_Scene">
-                <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
-                    <group name="root">
-                        <group name="GLTF_SceneRootNode" rotation={[Math.PI / 2, 0, 0]}>
-                            <group name="GLTF_created_0">
-                                <primitive object={nodes.GLTF_created_0_rootJoint} />
-                                <skinnedMesh
-                                    name="Object_7"
-                                    geometry={nodes.Object_7.geometry}
-                                    material={materials.MI_HonkyFace}
-                                    skeleton={nodes.Object_7.skeleton}
-                                />
-                                <skinnedMesh
-                                    name="Object_10"
-                                    geometry={nodes.Object_10.geometry}
-                                    material={materials.MI_HonkyCloth}
-                                    skeleton={nodes.Object_10.skeleton}
-                                />
-                                <group name="0000_Honky_91">
-                                    <group name="0000_Honky_92" />
-                                </group>
-                                <group name="0001_Honky_93">
-                                    <group name="0001_Honky_94" />
-                                </group>
-                            </group>
-                        </group>
-                    </group>
-                </group>
+                <primitive object={nodes.GLTF_created_0_rootJoint} />
+                <skinnedMesh
+                    name="Object_7"
+                    geometry={nodes.Object_7.geometry}
+                    material={materials.PaletteMaterial001}
+                    skeleton={nodes.Object_7.skeleton}
+                />
+                <skinnedMesh
+                    name="Object_8"
+                    geometry={nodes.Object_8.geometry}
+                    material={materials.PaletteMaterial001}
+                    skeleton={nodes.Object_8.skeleton}
+                />
+                <skinnedMesh
+                    name="Object_9"
+                    geometry={nodes.Object_9.geometry}
+                    material={materials.PaletteMaterial001}
+                    skeleton={nodes.Object_9.skeleton}
+                />
+                <skinnedMesh
+                    name="Object_10"
+                    geometry={nodes.Object_10.geometry}
+                    material={materials.PaletteMaterial001}
+                    skeleton={nodes.Object_10.skeleton}
+                />
+                <skinnedMesh
+                    name="Object_11"
+                    geometry={nodes.Object_11.geometry}
+                    material={materials.PaletteMaterial001}
+                    skeleton={nodes.Object_11.skeleton}
+                />
             </group>
         </group>
     );
