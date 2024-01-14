@@ -1,6 +1,7 @@
 import React from 'react'
 import { skills } from '../constants'
 import CTA from '../components/CTA'
+import { Helmet } from 'react-helmet'
 
 const About = () => {
   return (

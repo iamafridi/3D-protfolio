@@ -24,7 +24,7 @@ const renderContent = {
     ),
     2: (
         <InfoBox
-            text="I am a blogger and developer,constantly learning new skils"
+            text="I am a Blogger and Web Developer, constantly learning new skils"
             link="/about"
             btnText="Know More about me"
 

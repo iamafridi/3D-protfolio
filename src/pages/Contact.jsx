@@ -8,6 +8,7 @@ import Loader from '../components/Loader';
 import useAleart from '../hooks/useAleart';
 import useAlert from '../hooks/useAleart';
 import Alert from '../components/Alert';
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {
   const formRef = useRef(null);
