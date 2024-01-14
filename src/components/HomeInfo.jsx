@@ -20,7 +20,9 @@ const renderContent = {
             I am <span className='font-semibold'> Afridi</span> 🧸
             <br />
             A MERN Stack Developer from Bangladesh
+          
         </h1>
+
     ),
     2: (
         <InfoBox
@@ -34,7 +36,7 @@ const renderContent = {
         <InfoBox
             text="My work can be intresting to you, Check them here"
             link="/projects"
-            btnText="Visit my Protfolio"
+            btnText="Visit my Portfolio"
 
         />
     ),
