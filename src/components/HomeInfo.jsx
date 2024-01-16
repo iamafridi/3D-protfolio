@@ -20,7 +20,8 @@ const renderContent = {
             I am <span className='font-semibold'> Afridi</span> 🧸
             <br />
             A MERN Stack Developer from Bangladesh
-          
+            <br />
+          <span className='text-xs'>( Feel Free to move the plane across the Island to explore )</span>
         </h1>
 
     ),
